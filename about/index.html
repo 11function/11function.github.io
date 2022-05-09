@@ -30,8 +30,10 @@
     <script src="/libs/jquery/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
-<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="11function的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="11function的博客" type="application/atom+xml">
+</head>
 
 
 
@@ -860,6 +862,29 @@
             </div>
         </div>
     </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-content article-card-content">
+                <div class="title center-align" data-aos="zoom-in-up">
+                    <i class="fa fa-address-book"></i>&nbsp;&nbsp;个人简历
+                 </div>
+                    <div id="articleContent" data-aos="fade-up">
+                        <h3 id="file-folder-社交主页"><a href="#file-folder-社交主页" class="headerlink" title=":file_folder: 社交主页"></a><span class="github-emoji"><span>📁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c1.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 社交主页</h3><p><img src="https://img-blog.csdnimg.cn/4e998997c23846f997560287de604f67.png" width="30" align="left"><strong>github：</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/b4bf8c3191e04da3b0b0868070b0cff6.png" width="30" align="left"><strong>CSDN：</strong></p>
+<hr>
+<p align="right" style="color: red">@2022 created by 11function</p>
+
+<h2 id="11function-x2F-11function"><a href="#11function-x2F-11function" class="headerlink" title="11function/11function"></a>11function/11function</h2><ul>
+<li>:e-mail: <strong>邮&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;箱：</strong> <font color="#4ea1db"><a href="mailto:3491821637@qq.com">3491821637@qq.com</a></font></li>
+<li><span class="github-emoji"><span>☎</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/260e.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <strong>手&amp;ensp;机&amp;ensp;号：</strong> 137xxxxxxxx</li>
+</ul>
+<hr>
+<p>————————————————<br>版权声明：本文为CSDN博主「small_Axe」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/houwhu/article/details/123543897">https://blog.csdn.net/houwhu/article/details/123543897</a></p>
+
+                    </div>
+              </div>
+         </div>
+   </div>
 </main>
 
 
@@ -1161,6 +1186,48 @@ $(function () {
     <script type="text/javascript" charset="utf-8" async="" src="https://crazyyuchi.github.io/live2dw/lib/L2Dwidget.0.min.js"></script>
     <script type="text/javascript"> var OriginTitile = document.title, st; 
         document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>        
+
+    <!-- 鼠标点击文字效果 -->
+<script>
+    var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array
+        ("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 5,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#FF0000"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+			3000,
+			function() {
+			    $i.remove();
+			});
+    });
+    setTimeout('delay()', 2000);
+});
+
+function delay() {
+    $(".buryit").removeAttr("onclick");
+}
+</script>
+
+<!-- 添加鼠标点击烟花效果 -->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
