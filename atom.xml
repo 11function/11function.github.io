@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-09T01:15:47.109Z</updated>
+  <updated>2022-07-06T10:04:24.897Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://example.com/2022/07/06/My-New-Post/"/>
+    <id>http://example.com/2022/07/06/My-New-Post/</id>
+    <published>2022-07-06T10:04:24.000Z</published>
+    <updated>2022-07-06T10:04:24.897Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/07/06/HTML%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/07/06/HTML%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-06T09:45:53.437Z</published>
+    <updated>2022-07-05T01:33:17.827Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.HTML笔记&lt;/p&gt;
+&lt;h1 id=&quot;1-初始HTML&quot;&gt;&lt;a href=&quot;#1-初始HTML&quot; class=&quot;headerlink&quot; title=&quot;1.初始HTML&quot;&gt;&lt;/a&gt;1.初始HTML&lt;/h1&gt;&lt;h2 id=&quot;1-1-HTML是什么？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
